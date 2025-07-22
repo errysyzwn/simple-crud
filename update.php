@@ -1,10 +1,7 @@
 <?php
-require_once "config.php";
- 
-$name = $address = $salary = "";
-$name_err = $address_err = $salary_err = "";
- 
 if(isset($_POST["id"]) && !empty($_POST["id"])){
+    require_once "config.php";
+    
     $id = $_POST["id"];
     
     $input_name = trim($_POST["name"]);
